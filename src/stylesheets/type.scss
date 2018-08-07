@@ -1,4 +1,94 @@
+@import 'media';
+
 $font-stack: Helvetica, sans-serif;
+
+
+
+
+
+//Media Queries
+@mixin xs {
+ @media only screen and (min-width:$xs) and (max-width: #{$sm -  1px}) {
+ @content;
+ }
+}
+@mixin xs-up {
+ @media only screen and (min-width:$xs) {
+   @content;
+ }
+}
+
+@mixin sm {
+ @media only screen and (min-width: #{$sm}) and (max-width: #{$md - 1px}) {
+     @content;
+ }
+}
+
+@mixin sm-dn {
+ @media only screen and (max-width:#{$md - 1px}) {
+   @content;
+ }
+}
+
+
+@mixin sm-up {
+ @media screen and (min-width: $sm) {
+   @content;
+ }
+}
+
+@mixin md {
+ @media screen and (min-width: #{$md}) and (max-width: #{$lg - 1px}) {
+   @content;
+ }
+}
+
+@mixin md-dn {
+ @media only screen and (max-width: #{$lg - 1px}) {
+   @content;
+ }
+}
+
+@mixin md-up {
+ @media only screen and (min-width: $md) {
+   @content;
+ }
+}
+
+@mixin lg {
+ @media only screen and (min-width: #{$lg}) {
+   @content;
+ }
+}
+
+body {
+ font-size:1rem;
+ margin:0;
+}
+
+
+@mixin fontsizer($lgSize) {
+ @include lg {
+ font-size: $lgSize;
+ }
+ @include md {
+   font-size: $lgSize*.9;
+ }
+ @include sm {
+   font-size: $lgSize*.8;
+ }
+ @include xs {
+   font-size: $lgSize*.75;
+ }
+
+}
+
+
+
+html {
+  font-size: 10px;
+}
+
 
 h1, h2, h3, h4, p, span {
   font-family: $font-stack;
@@ -6,21 +96,22 @@ h1, h2, h3, h4, p, span {
 
 
 h1 {
-  font-size: 3em;
+ @include fontsizer(4rem);
 }
 
+
 h2 {
-  font-size: 1.75em;
+ @include fontsizer(2rem);
 }
 
 h3 {
-  font-size: 1.25em;
+  @include fontsizer(1.25rem);
 }
 
 p {
-  font-size: 1em;
+  @include fontsizer(1.1rem);
 }
 
 .subtitle {
-  font-size: 1.5em;
+  @include fontsizer(2rem);
 }
