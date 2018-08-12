@@ -1,0 +1,13 @@
+## Created with gatsby-plugin-netlify
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+/static/*
+  Cache-Control: max-age=31536000
+/
+  Link: </commons-57ce527d5e394f3c7719.js>; rel=preload; as=script
+  Link: </app-e0912118c1f4c393c4b6.js>; rel=preload; as=script
+  Link: </path---index-a0e39f21c11f6a62c5ab.js>; rel=preload; as=script
+  Link: </component---src-pages-index-jsx-274772804bf0f4456f8d.js>; rel=preload; as=script
