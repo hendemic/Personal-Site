@@ -1,7 +1,7 @@
 import React from "react"
 
 import Landing from "../components/full-title"
-import styles from "../stylesheets/index.scss"
+import stylesheet from "../stylesheets/index.scss"
 
 export default () => (
     <div>
@@ -12,12 +12,11 @@ export default () => (
       />
 
       <Landing
-        color = {styles.colorWhite}
-        textCol = {styles.colorPrimary}
+        color = 'white'
+        textCol = {stylesheet.colorPrimary}
         opac = {1}
         subtitle = "This is where my portfolio pieces will be!"
       />
 
     </div>
-
 )
