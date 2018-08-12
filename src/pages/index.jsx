@@ -12,8 +12,8 @@ export default () => (
       />
 
       <Landing
-        color = {styles.colorWhite}
-        textCol = {styles.colorPrimary}
+        color = 'white'
+        textCol = 'black'
         opac = {1}
         subtitle = "This is where my portfolio pieces will be!"
       />
