@@ -8,7 +8,7 @@ export default (props) => (
         <h1 className={styles.title} style={{color: props.text, opacity: props.opac}}>
           {props.title}
         </h1>
-        <span className="subtitle" style={{color: props.text, opacity: props.opac}}>
+        <span className="subtitle" style={{color: props.textCol, opacity: props.opac}}>
           {props.subtitle}
         </span>
       </div>
