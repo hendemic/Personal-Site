@@ -3,7 +3,8 @@
 @import 'media';
 
 
-
+:export { colorPrimary: $colorPrimary }
+:export {colorWhite: $colorWhite}
 
 body {
   margin: 0;
