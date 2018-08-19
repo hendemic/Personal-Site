@@ -10,7 +10,7 @@ import MenuItem from "./menuLink"
 export default (props) => (
     <div className={styles.container}>
       <div className={styles.logo}>
-        <img className={styles.logoImg} src={logo} />
+          <span> <a href={""}> Mike Henderson </a> </span>
       </div>
 
       <ul className={styles.menu}>
