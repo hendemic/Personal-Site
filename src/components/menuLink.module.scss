@@ -12,6 +12,11 @@
 
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .fillbox{
   background-color: $colorSecondary;
   display: block;

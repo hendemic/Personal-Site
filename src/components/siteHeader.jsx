@@ -12,13 +12,13 @@ export default (props) => (
       <div className={styles.logo}>
         <img className={styles.logoImg} src={logo} />
       </div>
-      
-      <div className={styles.menu}>
-        <MenuItem menuContent = "projects"/>
-        <MenuItem menuContent = "playground"/>
-        <MenuItem menuContent = "resume"/>
-        <MenuItem menuContent = "about"/>
-      </div>
+
+      <ul className={styles.menu}>
+        <MenuItem Link = "null" menuContent = "about"/>
+        <MenuItem Link = "null" menuContent = "resume"/>
+        <MenuItem Link = "null" menuContent = "playground"/>
+        <MenuItem Link = "null" menuContent = "projects"/>
+      </ul>
 
       {console.log("menu rendered")}
 
