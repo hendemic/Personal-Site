@@ -1,4 +1,5 @@
 @import 'media';
+@import 'color';
 
 $font-stack: Helvetica, sans-serif;
 
@@ -86,13 +87,12 @@ body {
 
 
 html {
-  font-size: 10px;
-}
-
-
-h1, h2, h3, h4, p, span {
+  font-size: 16px;
   font-family: $font-stack;
+  color: $colorPrimary;
 }
+
+
 
 
 h1 {
@@ -109,7 +109,7 @@ h3 {
 }
 
 p {
-  @include fontsizer(1.1rem);
+  @include fontsizer(1rem);
 }
 
 .subtitle {
